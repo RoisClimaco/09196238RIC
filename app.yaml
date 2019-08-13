@@ -1,0 +1,22 @@
+runtime: php
+env: flex
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 1
+
+resources:
+  cpu: 2
+  memory_gb: 2.3
+  disk_size_gb: 10
+
+runtime_config:
+  document_root: .
+
+env_variables:
+  MYSQL_USER: root
+  MYSQL_PASSWORD: ric09196238
+  MYSQL_DSN: 'mysql:dbname=dbcustomerregistrationsystem;unix_socket=/cloudsql/mockfinalsphp:australia-southeast1:ric09196238'
+
+beta_settings:
+  cloud_sql_instances: 'mockfinalsphp:australia-southeast1:ric09196238'
