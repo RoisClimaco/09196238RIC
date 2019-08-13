@@ -16,7 +16,7 @@ runtime_config:
 env_variables:
   MYSQL_USER: root
   MYSQL_PASSWORD: ric09196238
-  MYSQL_DSN: 'mysql:dbname=dbcustomerregistrationsystem;unix_socket=/cloudsql/mockfinalsphp:australia-southeast1:ric09196238'
+  MYSQL_DSN: 'mysql:dbname=dbcustomerregistrationsystem;unix_socket=/cloudsql/ric09196238:australia-southeast1:ric09196238'
 
 beta_settings:
-  cloud_sql_instances: 'mockfinalsphp:australia-southeast1:ric09196238'
+  cloud_sql_instances: 'ric09196238:australia-southeast1:ric09196238'

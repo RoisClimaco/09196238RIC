@@ -6,7 +6,7 @@
   private $password = 'ric09196238';
   private $database = 'dbcustomerregistrationsystem';
   private $port = null;
-  private $instanceId = '/cloudsql/mockfinalsphp:australia-southeast1:ric09196238';
+  private $instanceId = '/cloudsql/ric09196238:australia-southeast1:ric09196238';
 
   public function __construct(){
 
