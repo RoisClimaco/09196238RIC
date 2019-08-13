@@ -13,7 +13,7 @@
   }
 
   public function insertUser(User $user){
-    $connection = mysqli_connect($this->host, $this->username, $this->password, $this->database, $this->port, $this->instanceId);
+    $connection = mysqli_connect(null, $this->username, $this->password, $this->database, null, $this->instanceId);
     $statement = "INSERT INTO `dbcustomerregistrationsystem`.`tblusers` (`userid`, `firstname`, `password`) VALUES ('". $user->getUserId() ."', '". $user->getFirstname() ."', '". $user->getPassword(  ) ."')";
     echo mysqli_error($connection);
     echo $statement;
